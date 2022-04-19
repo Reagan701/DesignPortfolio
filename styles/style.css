@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    height: 270vh;
+    width: 100vw;
+}
+
+header, footer{
+    min-width: 100%;
+    min-height: 5vh;
+    background-color: #25274D;
+}
+.Title, .About, .Contact{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* #region Titles */
+
+.Title{
+    background-color: #464866;
+    height: 100vh;
+}
+
+#TitleBox{
+    border: 10px dashed #2E9CCA;
+    color: #2E9CCA;
+    width: 90vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
+}
+
+.About{
+    background-color: orangered;
+    height: 85vh;
+}
+
+.Contact{
+    background-color: greenyellow;
+    height: 85vh;
+}
+
+#MainTitleText{
+    font-size: 70px;
+}
+#TitleText{
+    font-size:35px;
+}
+/* #endregion Titles */
+
+header{
+    position: fixed;
+}
