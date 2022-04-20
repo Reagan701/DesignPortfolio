@@ -13,9 +13,26 @@ main{
 header, footer{
     min-width: 100%;
     min-height: 5vh;
-    background-color: #25274D;
+    background-color: #464866;
 }
-.Title, .About, .Contact{
+
+a{
+    text-decoration: none;
+    color: #AAABB6;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #29648A;
+}
+
+a:visited{
+    color: #2E9CCA;
+    text-decoration: underline;
+}
+
+
+.Title{
     text-align: center;
     justify-content: center;
     display: flex;
@@ -26,13 +43,13 @@ header, footer{
 /* #region Titles */
 
 .Title{
-    background-color: #464866;
+    background-color: #25274D;
     height: 100vh;
 }
 
 #TitleBox{
-    border: 10px dashed #2E9CCA;
-    color: #2E9CCA;
+    border: 10px dashed #AAABB6;
+    color: #AAABB6;
     width: 90vw;
     height: 40vh;
     display: flex;
@@ -42,12 +59,13 @@ header, footer{
 }
 
 .About{
-    background-color: orangered;
+    background-color: #84CEEB;
+    width: 100%;
     height: 85vh;
 }
 
 .Contact{
-    background-color: greenyellow;
+    background-color: #5AB9EA;
     height: 85vh;
 }
 
