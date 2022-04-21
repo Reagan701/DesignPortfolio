@@ -1,54 +1,88 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    overflow-x: hidden;
-}
-
-header, footer{
-    min-width: 100%;
-    min-height: 5vh;
-    background-color: #464866;
-}
-
-a{
-    text-decoration: none;
-    color: #AAABB6;
-}
-
-a:hover{
-    text-decoration: underline;
-    color: #29648A;
-}
-
-a:visited{
-    color: #2E9CCA;
-    text-decoration: underline;
-}
-
-main{
-    height: 90vh;
-    width: 100vw;
-}
-
 .AboutPage{
+    background-color: #25274D;
     display: flex;
     flex-direction: column;
     width: 100%;
     border: 1px solid;
+    text-align: center;
 }
-
-#FantasyImage{
-    width: 50%;
-}
-
-.GameDesign{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+.GameDesign, .Modeling, .Coding{
+    background-color: #25274D;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    gap: 7px;
     border: 1px solid black;
+    text-align: center;
+}
+
+.Skills{
+    background-color: #25274D;
+    display: grid; 
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto auto auto auto;
+    gap: 7px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.SkillIcon{
+    border: 3px solid;
+    width: 75%;
+}
+
+.SkillText{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.Item0{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .GameDesignGridItem{
-    border: 1px solid;
-    
+    border: 3px solid;
+    width: 75%;
+}
+
+.Item1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ModelingGridItem{
+    border: 3px solid;
+    width: 75%;
+}
+
+.Item2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.CodingGridItem{
+    border: 3px solid;
+    width: 75%;
+}
+
+.Item3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Skill{
+    font-size: 40px;
+    width: 50%;
+    height: 10%;
+    margin: 10px auto auto auto;
+    text-align: center;
+    border: 1px solid black;
+    background-color: lightblue;
 }
