@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+    color: #AAABB6;
+}
+
+main{
+    height: 300vh;
+    width: 100vw;
+    background-color: #464866;
+}
+
+header, footer{
+    min-width: 100%;
+    min-height: 8vh;
+    background-color: #313350;
+}
+
+ul{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+h2{
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #008FA8;
+    width: 95%;
+    font-size: 34px;
+    border: 11px solid black;
+
+}
+
+#Home, #AboutID, #ContactID{
+    text-decoration: none;
+    color: #AAABB6;
+    font-size: 2em;
+    margin-left: 10px;
+
+}
+
+#Home:hover, #AboutID:hover, #ContactID:hover{
+    text-decoration: underline;
+    color: #29648A;
+}
+
+#Home:visited, #AboutID:visited, #ContactID:visited{
+    color: #2E9CCA;
+    text-decoration: underline;
+}
+
+.GameDesign, .Modeling, .Coding{
+    background-color: #25274D;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    gap: 7px;
+    border: 11px solid black;
+    text-align: center;
+    margin: auto;
+    width: 85%;
+}
+.Item0{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.GameDesignGridItem{
+    border: 3px solid;
+    width: 75%;
+}
+
+.Item1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    font-size:20px;
+}
+
+.ModelingGridItem{
+    border: 3px solid;
+    width: 75%;
+}
+.CodingGridItem{
+    border: 3px solid;
+    width: 75%;
+}
+
+.Item3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    position: fixed;
+}
+
+.Projects{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: 10%;
+    background-color: #25274D;
+}
+
+.Return{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Return{
+    font-size: 32px;
+}
+
+#Return:hover{
+    text-decoration: underline;
+    color:#2E9CCA;
+}

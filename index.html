@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/HomeStyle.css">
     <link rel="stylesheet" href="./styles/AboutStyle.css">
+    <link rel="stylesheet" href="./styles/ContactStyle.css">
     <title>Reagan Carolussen | Home</title>
 </head>
 <body>
@@ -13,9 +14,9 @@
         <nav>
             <ul>
                 <li>
-                    <a id="Home" href="./index.html">Home</a>
-                    <a id="About" href="./about.html">About</a>
-                    <a id="Contact" href="./contact.html"> Contact</a>
+                    <a id="Home" href="#Main">Home</a>
+                    <a id="AboutID" href="#About">About</a>
+                    <a id="ContactID" href="#Contact"> Contact</a>
                 </li>
             </ul>
         </nav>
@@ -26,69 +27,99 @@
                 
                 <div id="TitleBox">
                     <h1 id = "MainTitleText"> Hello! <br> I am Reagan Carolussen </h1>
-                    <p id="TitleText"> I am an aspiring web-designer </p>
+                    <p id="TitleText"> An aspiring web-designer </p>
 
                 </div>
                 
             </div>
             
-        <div class="AboutPage">
-            <h1> About Me </h1>
-            <p> My name is Reagan Carolussen, I am 19 years old and was born in Contansia Burg. I've always taken a liking to programming and computers and chose to pursue a career in that. I take initiative. Ever since highschool when I found my passion, I took coding extra curriculum activities and started learning python and in 2019 I was elected to be a prefect at my highschool. My leadership goals, my time-management and I believe Iam a multi-talented individual</p>
-        </div>
-
-        <h1 id="Skill">Skills</h1>
-            <div class="Skills">
-
-                <img class="SkillIcon" src="./images/html-5-icon.png" alt="HTML Icon">
-                <img class="SkillIcon" src="./images/css-3-icon.png" alt="CSS3 Icon">
-                <img class="SkillIcon" src="./images/c.png" alt="C# Icon">
-                <p class="SkillText"> This is a thing</p>
-                <p class="SkillText">This is a thing</p>
-                <p class="SkillText">This is a thing</p>
-
+        </section>
+        <section id="About">
+            <div class="AboutPage">
+                <h1 id="AboutMeTitle"> About Me </h1>
+                <div class="ImageContainer">
+                    <p id="AboutMeText"> My name is Reagan Carolussen, I am 19 years old and was born in Contansia Burg. I've always taken a liking to programming and computers and chose to pursue a career in that. I take initiative. Ever since highschool when I found my passion, I took coding extra curriculum activities and started learning python and in 2019 I was elected to be a prefect at my highschool. My leadership goals, my time-management and I believe I am a multi-talented individual</p>
+                    <img id= "ProfessionalImage" src="./images/Reagan.jpg" alt="ProfessionalImage">
+                </div>
             </div>
+    
+            <h1 id="Skill">Skills</h1>
+                <div class="Skills">
+    
+                    <img class="SkillIcon" src="./images/html-5-icon.png" alt="HTML Icon">
+                    <img class="SkillIcon" src="./images/css-3-icon.png" alt="CSS3 Icon">
+                    <img class="SkillIcon" src="./images/c.png" alt="C# Icon">
+                    <img class="SkillIcon" src="./images/unity-69-logo-black-and-white.png" alt="Unity Icon">
+                    <img class="SkillIcon" src="./images/autodesk-maya.png" alt="Maya Icon">
+                    <p class="SkillText"> Currently learing HTML 5</p>
+                    <p class="SkillText"> Learning CSS 3</p>
+                    <p class="SkillText"> Proficient in C Sharp</p>
+                    <p class="SkillText"> Uses the Unity Game Engine</p>
+                    <p class="SkillText"> Able to create 3D models in applications such as AutoDesk Maya</p>
+    
+                </div>
 
-            <h2>Video Game Design</h2>
-            <div class="GameDesign">
-                <p class="Item0">BrickBreakerExplanation</p>
-                <img class="GameDesignGridItem" src="./images/BrickBreaker/Game Screen.png" alt="BrickBreakerScreen">
-                <p class="Item0">FirstPersonExplanation</p>
-                <img  class="GameDesignGridItem" src="./images/First Person Game/GameScreen.png" alt="FirstPersonGameScreen">
-                <p class="Item0">ForestRunExplanation</p>
-                <img class="GameDesignGridItem" src="./images/Forest Run/InGameScreen.png" alt="ForestRunScreen">
-            </div>
-        </div>
+                <div class="Grid">
+                    <div class="VideoContainer">
+                        <p id="VideoGameText">Video Game Design</p>
+                        <div class="VideoGrid">
+                            <img id="VideoGame1" src="./images/Forest Run/InGameScreen.png" alt="ForestRunScreen">
+                            <p> A video game I created called Forest Run. Read more at the <a class="projectpage" href="./projects.html">project page</a></p>
+                        </div>
+                    </div>
+                    <div class="ModelContainer">
+                        <p id="ModelingText">Modeling</p>
+                        <div class="ModelingGrid">
+                            <img id="Model1" src="./images/Voxel.png" alt="VoxelImage">
+                            <img id="Model2" src="./images/Burger Kart.png" alt="KartImage">
+                            <p id="MText"> Various 3D Models I've completed. Read more at <a class="projectpage" href="./projects.html">project page</a> </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- <div class="Contact">
+                    <div style="background-color: #25274D;"> Darker </div>
+                    <div style="background-color: #464866;"> Dark </div>
+                    <div style="background-color: #AAABB6;"> Normal </div>
+                    <div style="background-color: #2E9CCA;"> Light </div>
+                    <div style="background-color: #29648A;"> Lighter </div>
+                </div> -->
+        </section>
 
-        <h2> 3D Modeling </h2>
-        <div class="Modeling">
-            <img class="ModelingGridItem" src="./images/Voxel.png" alt="VoxelImage">
-            <p class="Item1">BrickBreakerExplanation</p>
-            <img  class="ModelingGridItem" src="./images/Burger Kart.png" alt="KartImage">
-            <p class="Item1">FirstPersonExplanation</p>
-            <img class="ModelingGridItem" src="./images/Weapon.png" alt="WeaponImage">
-            <p class="Item1">ForestRunExplanation</p>
-        </div>
-
-        <h2> Coding </h2>
-        <div class="Coding">
-            <p class="Item2">BrickBreakerExplanation</p>
-            <img class="CodingGridItem" src="./images/Voxel.png" alt="HTML Image">
-            <p class="Item2">FirstPersonExplanation</p>
-            <img  class="CodingGridItem" src="./images/Weapon.png" alt="CSS Image">
-            <p class="Item2">ForestRunExplanation</p>
-            <img class="CodingGridItem" src="./images/Weapon.png" alt="C# Image">
-        </div>
+        <section id="Contact">
             <div class="Contact">
-                <div style="background-color: #25274D;"> Darker </div>
-                <div style="background-color: #464866;"> Dark </div>
-                <div style="background-color: #AAABB6;"> Normal </div>
-                <div style="background-color: #2E9CCA;"> Light </div>
-                <div style="background-color: #29648A;"> Lighter </div>
+                <h2 id="ContactHeading"> Contact Me!</h2>
+
+                <div class="ContactInfo">
+                    <div class="Form">
+                        <div class="FormContent">
+                            <h1 id="ContactTitle">Contact me!</h1>
+                            <form>
+                                <div>
+                                    <label> Name:</label>
+                                    <input type="text", id="Input" placeholder="Enter your name" required></input>
+                                </div>
+                                <div>
+                                        <label> Surname: </label>
+                                        <input type="text" id="Input" placeholder="Enter your surame" required></input>
+                                </div>
+                                <div>
+                                    <label> Email: </label>
+                                    <input type="email", placeholder="Enter your email">
+                                </div>
+                                <div>
+                                    <label>Message </label>
+                                    <textarea placeholder="Send me a message!" id=""cols="30" rows="10"></textarea>
+                                </div>
+                                <button class="SubmitButton" type="submit"> Submit</button>
+                            </form>
+                            <a href="https://github.com/Reagan701"> <img id="GitHub" src="./images/2048px-Octicons-mark-github.svg.png" alt="GithubLink"> </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
-        
-
     </main>
     <footer>
         <p>Copyright &copy; 2022</p>
