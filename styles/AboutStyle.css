@@ -4,8 +4,8 @@
     justify-content: space-between;
     width: 100%;
     text-align: center;
-    border: 1px solid;
     height: 80vh;
+    overflow-x: hidden;
 }
 
 #About{
@@ -15,14 +15,15 @@
 
 .Skills{
     background-color: #25274D;
+    height:50vh;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    gap: 7px;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    gap: 10px;
     border: 11px solid black;
-    margin: 5%;
+    margin: 2%;
 }
 
-.SkillIcon{
+/* .SkillIcon{
     border: 3px solid black;
     margin: inherit;
     width: 75%;
@@ -36,17 +37,18 @@
     text-align: center;
     margin: inherit;
     flex-direction: column;
-}
+} */
 
 #Skill{
     font-size: 40px;
-    width: 97%;
+    width: 100%;
     height: 10%;
     margin: 10px auto auto auto;
     text-align: center;
     border: 11px solid black;
     background-color: #29648A;
 }
+
 
 .ImageContainer{
     width: 90%;
@@ -61,7 +63,7 @@
 #AboutMeText{
     font-size: 22px;
     margin: auto;
-    width: 80%;
+    width: 70%;
     height: 90%;
     display: flex;
     align-items: center;
@@ -69,7 +71,7 @@
 }
 
 #ProfessionalImage{
-    width: 25%;
+    width: 22%;
     height: 75%;
     margin: auto;
 }
@@ -153,6 +155,7 @@
     border: 8px solid black;
 }
 
+
 #VideoGame1{
     margin: auto;
     width: 70%;
@@ -164,11 +167,20 @@
     color:#2E9CCA;
 }
 
-.VideoGrid:hover #Card{
+.CardText{
+    text-align: center;
+    font-size: 40px;
+}
+.Card:hover .CardInterior{
     transform: rotateY(180deg);
 }
 
-#Front, #Back {
+.cardicon{
+    height: 80%;
+    width: 100%;
+}
+
+.Front, .Back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -177,16 +189,96 @@
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
 }
-#Back{
-    background-color: rgb(79, 68, 47);
+.Front{
+    background-color: transparent;
+}
+.Back{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     transform: rotateY(180deg);
 }
 
-#Card{
-    width: 100%;
-    height: 100%;
+.CardInterior{
+    margin-top:10px;
+    width: 90%;
+    height: 90%;
     position: relative;
     text-align: center;
     transition: transform 0.5s;
     transform-style: preserve-3d;
+}
+
+.Card{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.Resume{
+    width: 87%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#ResumeHeading{
+    font-size: 42px;
+    text-decoration: underline;
+    margin: 1% auto auto auto;
+    text-align: center;
+    border: 7px solid black;
+    background-color: #29648A;
+    width: 97%;
+}
+.EducationContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    border: 8px solid black;
+    margin: auto;
+    background-color:#25274D;
+}
+
+#EducationContentHeading{
+    font-size:35px;
+    text-decoration: underline;
+    width: fit-content;
+    margin: auto;
+}
+
+
+.EducationContent li{
+    font-size: 21px;
+    margin: 7%;
+}
+
+.WorkplaceContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    border: 8px solid black;
+    margin: auto;
+    background-color:#25274D;
+}
+
+#WorkplaceContentHeading{
+    font-size:35px;
+    text-decoration: underline;
+    width: fit-content;
+    margin: 2%;
+}
+
+
+.WorkplaceContent li{
+    font-size: 21px;
+    margin: 18% 0 10% 10%;
+    width: 100%;
 }

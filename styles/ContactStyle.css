@@ -1,32 +1,33 @@
 .Contact{
     display: flex;
     flex-direction: column;
-    height: 130vh;
+    height: 150vh;
     width: 100vw;
     overflow-x: hidden;
     margin-top: 1%;
 }
 .ContactInfo{
     width: 89%;
-    height: 100%;
-    display: inline-flex;
+    height: 100vh;
     border: 10px solid black;
-    margin: 1% auto auto auto;
+    margin: 5% auto auto auto;
     background-color:#25274D;
 }
 
 .ContactInfo label{
     display: inline-flex;
-    width: 100px;
+    width: 120px;
     text-align: right;
     margin-top: 5%;
     margin-left: 2%;
+    font-size: 22px;
 }
 
 #ContactTitle{
     text-align: center;
     text-decoration: underline;
     background-color: #25274D;
+    font-size: 23px;
     
 }
 
@@ -38,6 +39,7 @@
     border: 10px solid black;
     margin: 1% auto auto auto;
     background-color:#25274D;
+    justify-content: center;
 
 }
 
@@ -54,12 +56,11 @@
 
 #TestimonialHeading{
     font-size: 40px;
-    margin: 10px auto auto auto;
+    margin: 5px auto auto auto;
     width: 50%;
     height: 10%;
     text-align: center;
-    border: 4px solid black ;
-    
+    text-decoration: underline;
 }
 
 .TestimonialText{
@@ -68,14 +69,13 @@
     flex-direction: column;
     width: 100%;
     margin: auto;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .TestimonialName{
     width: 100%;
-    font-size: 40px;
+    font-size: 35px;
 }
-
 
 .SubmitButton{
     width: 15%;
@@ -84,19 +84,18 @@
 }
 
 #GitHub{
-    width: 15%;
-    height: 20%;
-    margin-left: 43%;
+    width: 30%;
+    height: 42%;
+    margin-left: 35.5%;
 }
 
 .Form{
     border: 3px solid;
     width: 35%;
-    height: 85%;
-    margin:auto;
+    height: 90%;
+    margin-left: 33% ;
     background-color: #25274D;
 }
-
 .ContactInfo input{
     width: 50%;
 }
@@ -112,7 +111,6 @@
     justify-content: center;
     align-items: center;
     text-decoration: underline;
-    text-underline-offset: 1px;
     text-align: center;
     margin:auto;
     width: 97%;
