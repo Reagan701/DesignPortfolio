@@ -8,6 +8,10 @@
     height: 80vh;
 }
 
+#About{
+    overflow-x: hidden ;
+}
+
 
 .Skills{
     background-color: #25274D;
@@ -150,12 +154,39 @@
 }
 
 #VideoGame1{
-    margin: auto auto auto auto;
-    width: 80%;
-    height: 65%;
+    margin: auto;
+    width: 70%;
+    height: 50%;
     border: 8px solid black;
 }
 .projectpage:hover{
     text-decoration: underline;
     color:#2E9CCA;
+}
+
+.VideoGrid:hover #Card{
+    transform: rotateY(180deg);
+}
+
+#Front, #Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+#Back{
+    background-color: rgb(79, 68, 47);
+    transform: rotateY(180deg);
+}
+
+#Card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
 }

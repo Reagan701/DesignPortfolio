@@ -1,7 +1,7 @@
 .Contact{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
     overflow-x: hidden;
     margin-top: 1%;
@@ -30,6 +30,53 @@
     
 }
 
+.Testimonials{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid black;
+    margin: 1% auto auto auto;
+    background-color:#25274D;
+
+}
+
+.Testimonial{
+    background-color: #25274D;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    gap: 70px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+#TestimonialHeading{
+    font-size: 40px;
+    margin: 10px auto auto auto;
+    width: 50%;
+    height: 10%;
+    text-align: center;
+    border: 4px solid black ;
+    
+}
+
+.TestimonialText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    font-size: 40px;
+}
+
+.TestimonialName{
+    width: 100%;
+    font-size: 40px;
+}
+
+
 .SubmitButton{
     width: 15%;
     height: 20%;
@@ -40,10 +87,6 @@
     width: 15%;
     height: 20%;
     margin-left: 43%;
-}
-
-#GitHub:hover{
-    filter: hue-rotate();
 }
 
 .Form{

@@ -11,12 +11,39 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="Nav">
             <ul>
-                <li>
-                    <a id="Home" href="#Main">Home</a>
+                <li id="Dropdown1">
+                        <a id="Home" href=""> Home</a>
+                        <ul class="SubMenu">
+                            <li>
+                                <a id="submenutext" href="#Home"> Home</a>
+                                <a id="submenutext" href="#About"> About</a>
+                                <a id="submenutext" href="#Contact"> Contact</a>
+                            </li>
+                        </ul>
+
+                </li>
+                <li id="Dropdown2">
                     <a id="AboutID" href="#About">About</a>
-                    <a id="ContactID" href="#Contact"> Contact</a>
+                    <ul class="SubMenu">
+                        <li>
+                            <a id="submenutext" href=""> About Me</a>
+                            <a id="submenutext" href="#"> About</a>
+                            <a id="submenutext" href="#"> Contact</a>
+                        </li>
+                    </ul>
+                <li id="Dropdown3">
+                    <a id="ContactID" href="">Contact</a>
+                    <ul class="SubMenu">
+                        <li>
+                            <p> Description </p>
+                            <p> Form</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+
                 </li>
             </ul>
         </nav>
@@ -90,26 +117,38 @@
             <div class="Contact">
                 <h2 id="ContactHeading"> Contact Me!</h2>
 
+                <div class="Testimonials">
+                    <h1 id="TestimonialHeading"> Testimonials </h1>
+                    <div class="Testimonial">
+                        <h1 class="TestimonialName" >Ikhlass Rahoot ~</h1>
+                        <p class="TestimonialText" > "This is a compliment"</p>
+                        <h1 class="TestimonialName" >Monique Dampies ~</h1>
+                        <p class="TestimonialText"> "This is a compliment"</p>
+                        <h1 class="TestimonialName">Emile Van Wyk ~</h1>
+                        <p class="TestimonialText"> "This is a compliment"</p>
+                    </div>
+                </div>
+
                 <div class="ContactInfo">
                     <div class="Form">
                         <div class="FormContent">
                             <h1 id="ContactTitle">Contact me!</h1>
-                            <form>
+                            <form action="https://formspree.io/f/mdobpnko" method="POST" >
                                 <div>
                                     <label> Name:</label>
-                                    <input type="text", id="Input" placeholder="Enter your name" required></input>
+                                    <input name="Name" type="text", id="Input" placeholder="Enter your name" required></input>
                                 </div>
                                 <div>
                                         <label> Surname: </label>
-                                        <input type="text" id="Input" placeholder="Enter your surame" required></input>
+                                        <input name="Surname" type="text" id="Input" placeholder="Enter your surame" required></input>
                                 </div>
                                 <div>
                                     <label> Email: </label>
-                                    <input type="email", placeholder="Enter your email">
+                                    <input name="Email" type="email", placeholder="Enter your email">
                                 </div>
                                 <div>
                                     <label>Message </label>
-                                    <textarea placeholder="Send me a message!" id=""cols="30" rows="10"></textarea>
+                                    <textarea name="Message" placeholder="Send me a message!" id=""cols="30" rows="10"></textarea>
                                 </div>
                                 <button class="SubmitButton" type="submit"> Submit</button>
                             </form>
